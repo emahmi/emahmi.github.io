@@ -507,7 +507,7 @@ section .title::after {
   text-align: center;
   color: #fff;
   width: 30%;
-  margin-right: 15px;
+  margin: 10px 15px 10px 0px;
 }
 
 .contact .contact-content .left .social .fa:hover {
@@ -575,7 +575,7 @@ section .title::after {
 }
 .contact .right form .button {
   height: 47px;
-  width: 536px;
+  width: 50%;
 }
 .contact .right form .button button {
   width: 100%;
@@ -692,26 +692,31 @@ footer span a:hover {
     width: 100%;
     margin-bottom: 35px;
   }
-}
 
-@media (max-width: 690px) {
-  .max-width {
-    padding: 0 23px;
-  }
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-  .home .home-content .text-3 {
-    font-size: 32px;
-  }
-  .home .home-content a {
-    font-size: 20px;
-  }
-  .services .serv-content .card {
-    width: 100%;
+  @media (max-width: 690px) {
+    .max-width {
+      padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+      font-size: 60px;
+    }
+    .home .home-content .text-3 {
+      font-size: 32px;
+    }
+    .home .home-content a {
+      font-size: 20px;
+    }
+    .services .serv-content .card {
+      width: 100%;
+    }
   }
 }
-
+@media (max-width: 580px) {
+  .contact .left .social {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
@@ -723,6 +728,7 @@ footer span a:hover {
   .skills .skills-content .left .text {
     font-size: 19px;
   }
+
   .contact .right form .fields {
     flex-direction: column;
   }
@@ -730,6 +736,10 @@ footer span a:hover {
   .contact .right form .email {
     margin: 0;
   }
+  .contact .right button {
+    width: 100%;
+  }
+
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
@@ -745,13 +755,15 @@ footer span a:hover {
 #status {
   /* position: absolute; */
   /* right: 190px; */
-  /* width: 50%; */
-  width: 536px;
+  /* width: 536px; */
+  position: absolute;
+  margin-top: 16em;
+  margin-left: 56em;
+  width: 15rem;
   height: 47px;
   text-align: center;
   padding: 8px;
-  margin-left: 600px;
-  /* margin-top: 256px; */
+  /* margin-top: 30px; */
   border-radius: 6px;
 }
 #status.success {
